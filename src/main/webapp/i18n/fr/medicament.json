@@ -1,0 +1,22 @@
+{
+    "cmsApp": {
+        "medicament" : {
+            "home": {
+                "title": "Medicaments",
+                "createLabel": "Créer un nouveau Medicament",
+                "createOrEditLabel": "Créer ou éditer un Medicament"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Medicament {{ id }} ?"
+            },
+            "detail": {
+                "title": "Medicament"
+            },
+            "nom": "Nom",
+            "posologie": "Posologie",
+            "indParticulier": "IndParticulier",
+            "ordonnance": "Ordonnance"
+        }
+    }
+}
+

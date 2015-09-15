@@ -1,0 +1,76 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipName": "effectuer",
+      "relationshipFieldName": "effectuer",
+      "otherEntityName": "practiciens",
+      "relationshipType": "one-to-many",
+      "otherEntityRelationshipName": "consultation"
+    },
+    {
+      "relationshipId": 2,
+      "relationshipName": "conduire",
+      "relationshipFieldName": "conduire",
+      "otherEntityName": "ordonnance",
+      "relationshipType": "many-to-many",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipId": 3,
+      "relationshipName": "symptome",
+      "relationshipFieldName": "symptome",
+      "otherEntityName": "symptome",
+      "relationshipType": "one-to-many",
+      "otherEntityRelationshipName": "consultation"
+    },
+    {
+      "relationshipId": 4,
+      "relationshipName": "hospitalisation",
+      "relationshipFieldName": "hospitalisation",
+      "otherEntityName": "hospitalisation",
+      "relationshipType": "one-to-many",
+      "otherEntityRelationshipName": "consultation"
+    },
+    {
+      "relationshipId": 5,
+      "relationshipName": "examens",
+      "relationshipFieldName": "examens",
+      "otherEntityName": "examens",
+      "relationshipType": "many-to-many",
+      "ownerSide": false,
+      "otherEntityRelationshipName": "consultation"
+    },
+    {
+      "relationshipId": 6,
+      "relationshipName": "personnel",
+      "relationshipFieldName": "personnel",
+      "otherEntityName": "personnel",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "id"
+    }
+  ],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "motif",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "date",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldId": 3,
+      "fieldName": "diagnostiqueConsul",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20150914232905",
+  "dto": "no",
+  "pagination": "no",
+  "fieldsContainLocalDate": true,
+  "fieldsContainCustomTime": true
+}

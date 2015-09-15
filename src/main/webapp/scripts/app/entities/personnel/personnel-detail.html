@@ -1,0 +1,134 @@
+
+<div>
+    <h2><span translate="cmsApp.personnel.detail.title">Personnel</span> {{personnel.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th translate="entity.detail.field">Field</th>
+                <th translate="entity.detail.value">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span translate="cmsApp.personnel.matricule">Matricule</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{personnel.matricule}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="cmsApp.personnel.nom">Nom</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{personnel.nom}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="cmsApp.personnel.prenom">Prenom</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{personnel.prenom}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="cmsApp.personnel.direction">Direction</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{personnel.direction}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="cmsApp.personnel.age">Age</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{personnel.age}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="cmsApp.personnel.sexe">Sexe</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{personnel.sexe}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="cmsApp.personnel.type">Type</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{personnel.type}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="cmsApp.personnel.famille">Famille</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{personnel.famille}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="cmsApp.personnel.groupeSanguin">GroupeSanguin</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{personnel.groupeSanguin}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="cmsApp.personnel.infosCompl">InfosCompl</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{personnel.infosCompl}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="cmsApp.personnel.allergie">Allergie</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{personnel.allergie}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="cmsApp.personnel.statut">Statut</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{personnel.statut}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="cmsApp.personnel.conjoint">conjoint</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="conjoint.detail({id:personnel.conjoint.id})">{{personnel.conjoint.id}}</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="cmsApp.personnel.enfant">enfant</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="enfant.detail({id:personnel.enfant.id})">{{personnel.enfant.id}}</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

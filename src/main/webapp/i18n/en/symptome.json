@@ -1,0 +1,23 @@
+{
+    "cmsApp": {
+        "symptome" : {
+            "home": {
+                "title": "Symptomes",
+                "createLabel": "Create a new Symptome",
+                "createOrEditLabel": "Create or edit a Symptome"
+            },
+            "created": "A new Symptome is created with identifier {{ param }}",
+            "updated": "A Symptome is updated with identifier {{ param }}",
+            "deleted": "A Symptome is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Symptome {{ id }}?"
+            },
+            "detail": {
+                "title": "Symptome"
+            },
+            "libelle": "Libelle",
+            "description": "Description",
+            "consultation": "Consultation"
+        }
+    }
+}

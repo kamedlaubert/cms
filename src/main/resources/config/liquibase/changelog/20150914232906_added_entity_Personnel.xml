@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <property name="now" value="now()" dbms="mysql,h2"/>
+    <property name="now" value="current_timestamp" dbms="postgresql"/>
+    <property name="now" value="sysdate" dbms="oracle"/>
+
+    <property name="autoIncrement" value="true" dbms="mysql,h2,postgresql"/>
+    <property name="autoIncrement" value="false" dbms="oracle"/>
+
+    <property name="floatType" value="real" dbms="postgresql, h2"/>
+    <property name="floatType" value="float" dbms="mysql, oracle"/>
+
+    <!--
+        Added the entity Personnel.
+    -->
+    <changeSet id="20150914232906" author="jhipster">
+        <createTable tableName="PERSONNEL">
+            <column name="id" type="bigint" autoIncrement="${autoIncrement}" >
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="matricule" type="varchar(255)"/>
+            <column name="nom" type="varchar(255)"/>
+            <column name="prenom" type="varchar(255)"/>
+            <column name="direction" type="varchar(255)"/>
+            <column name="age" type="varchar(255)"/>
+            <column name="sexe" type="varchar(255)"/>
+            <column name="type" type="varchar(255)"/>
+            <column name="famille" type="varchar(255)"/>
+            <column name="groupe_sanguin" type="varchar(255)"/>
+            <column name="infos_compl" type="varchar(255)"/>
+            <column name="allergie" type="varchar(255)"/>
+            <column name="statut" type="varchar(255)"/>
+            <column name="conjoint_id" type="bigint"/>
+            <column name="enfant_id" type="bigint"/>
+        </createTable>
+        
+        <addForeignKeyConstraint baseColumnNames="conjoint_id"
+                                 baseTableName="PERSONNEL"
+                                 constraintName="fk_personnel_conjoint_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="CONJOINT"/>
+
+        <addForeignKeyConstraint baseColumnNames="enfant_id"
+                                 baseTableName="PERSONNEL"
+                                 constraintName="fk_personnel_enfant_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="ENFANT"/>
+
+    </changeSet>
+</databaseChangeLog>

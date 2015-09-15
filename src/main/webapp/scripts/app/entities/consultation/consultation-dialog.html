@@ -1,0 +1,59 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myConsultationLabel" translate="cmsApp.consultation.home.createOrEditLabel">Create or edit a Consultation</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="consultation.id" readonly>
+        </div>
+
+        <div class="form-group">
+            <label translate="cmsApp.consultation.motif" for="field_motif">Motif</label>
+            <input type="text" class="form-control" name="motif" id="field_motif"
+                    ng-model="consultation.motif"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="cmsApp.consultation.date" for="field_date">Date</label>
+            <input type="date" class="form-control" name="date" id="field_date"
+                    ng-model="consultation.date"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="cmsApp.consultation.diagnostiqueConsul" for="field_diagnostiqueConsul">DiagnostiqueConsul</label>
+            <input type="text" class="form-control" name="diagnostiqueConsul" id="field_diagnostiqueConsul"
+                    ng-model="consultation.diagnostiqueConsul"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="cmsApp.consultation.conduire" for="field_conduire">conduire</label>
+            <select class="form-control" id="field_conduire" multiple name="conduire" ng-model="consultation.conduires" ng-options="ordonnance as ordonnance.id for ordonnance in ordonnances track by ordonnance.id"></select>
+        </div>
+        <div class="form-group">
+            <label translate="cmsApp.consultation.personnel" for="field_personnel">personnel</label>
+            
+            <select class="form-control" id="field_personnel" name="personnel" ng-model="consultation.personnel" ng-options="personnel as personnel.id for personnel in personnels track by personnel.id">
+                <option value=""></option>
+            </select>
+            
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || editForm.$submitted" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

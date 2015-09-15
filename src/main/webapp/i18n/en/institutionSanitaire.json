@@ -1,0 +1,24 @@
+{
+    "cmsApp": {
+        "institutionSanitaire" : {
+            "home": {
+                "title": "InstitutionSanitaires",
+                "createLabel": "Create a new InstitutionSanitaire",
+                "createOrEditLabel": "Create or edit a InstitutionSanitaire"
+            },
+            "created": "A new InstitutionSanitaire is created with identifier {{ param }}",
+            "updated": "A InstitutionSanitaire is updated with identifier {{ param }}",
+            "deleted": "A InstitutionSanitaire is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete InstitutionSanitaire {{ id }}?"
+            },
+            "detail": {
+                "title": "InstitutionSanitaire"
+            },
+            "raisonSocial": "RaisonSocial",
+            "nom": "Nom",
+            "type": "Type",
+            "hospitalisation": "Hospitalisation"
+        }
+    }
+}

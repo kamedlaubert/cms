@@ -1,0 +1,22 @@
+{
+    "cmsApp": {
+        "institutionSanitaire" : {
+            "home": {
+                "title": "InstitutionSanitaires",
+                "createLabel": "Créer un nouveau InstitutionSanitaire",
+                "createOrEditLabel": "Créer ou éditer un InstitutionSanitaire"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le InstitutionSanitaire {{ id }} ?"
+            },
+            "detail": {
+                "title": "InstitutionSanitaire"
+            },
+            "raisonSocial": "RaisonSocial",
+            "nom": "Nom",
+            "type": "Type",
+            "hospitalisation": "Hospitalisation"
+        }
+    }
+}
+

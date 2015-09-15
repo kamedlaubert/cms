@@ -1,0 +1,28 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipName": "hospitalisation",
+      "relationshipFieldName": "hospitalisation",
+      "otherEntityName": "hospitalisation",
+      "relationshipType": "one-to-one",
+      "ownerSide": false,
+      "otherEntityRelationshipName": "bPC"
+    }
+  ],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "numeroBpc",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "objectBpc",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20150914232906",
+  "dto": "no",
+  "pagination": "no"
+}

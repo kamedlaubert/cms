@@ -1,0 +1,23 @@
+{
+    "cmsApp": {
+        "practiciens" : {
+            "home": {
+                "title": "Practicienss",
+                "createLabel": "Créer un nouveau Practiciens",
+                "createOrEditLabel": "Créer ou éditer un Practiciens"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Practiciens {{ id }} ?"
+            },
+            "detail": {
+                "title": "Practiciens"
+            },
+            "matricule": "Matricule",
+            "tel": "Tel",
+            "email": "Email",
+            "type": "Type",
+            "consultation": "Consultation"
+        }
+    }
+}
+

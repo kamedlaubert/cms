@@ -1,0 +1,46 @@
+
+<div>
+    <h2><span translate="cmsApp.institutionSanitaire.detail.title">InstitutionSanitaire</span> {{institutionSanitaire.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th translate="entity.detail.field">Field</th>
+                <th translate="entity.detail.value">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span translate="cmsApp.institutionSanitaire.raisonSocial">RaisonSocial</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{institutionSanitaire.raisonSocial}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="cmsApp.institutionSanitaire.nom">Nom</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{institutionSanitaire.nom}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="cmsApp.institutionSanitaire.type">Type</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{institutionSanitaire.type}}</span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

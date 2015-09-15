@@ -1,0 +1,21 @@
+{
+    "cmsApp": {
+        "symptome" : {
+            "home": {
+                "title": "Symptomes",
+                "createLabel": "Créer un nouveau Symptome",
+                "createOrEditLabel": "Créer ou éditer un Symptome"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Symptome {{ id }} ?"
+            },
+            "detail": {
+                "title": "Symptome"
+            },
+            "libelle": "Libelle",
+            "description": "Description",
+            "consultation": "Consultation"
+        }
+    }
+}
+

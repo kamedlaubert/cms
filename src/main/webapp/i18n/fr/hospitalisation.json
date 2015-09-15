@@ -1,0 +1,26 @@
+{
+    "cmsApp": {
+        "hospitalisation" : {
+            "home": {
+                "title": "Hospitalisations",
+                "createLabel": "Créer un nouveau Hospitalisation",
+                "createOrEditLabel": "Créer ou éditer un Hospitalisation"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Hospitalisation {{ id }} ?"
+            },
+            "detail": {
+                "title": "Hospitalisation"
+            },
+            "code": "Code",
+            "dateAdmission": "DateAdmission",
+            "dateSorti": "DateSorti",
+            "motif": "Motif",
+            "bilan": "Bilan",
+            "consultation": "Consultation",
+            "bPC": "BPC",
+            "institutionSanitaire": "InstitutionSanitaire"
+        }
+    }
+}
+

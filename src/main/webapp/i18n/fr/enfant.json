@@ -1,0 +1,19 @@
+{
+    "cmsApp": {
+        "enfant" : {
+            "home": {
+                "title": "Enfants",
+                "createLabel": "Créer un nouveau Enfant",
+                "createOrEditLabel": "Créer ou éditer un Enfant"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Enfant {{ id }} ?"
+            },
+            "detail": {
+                "title": "Enfant"
+            },
+            "personnel": "Personnel"
+        }
+    }
+}
+

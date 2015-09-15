@@ -1,0 +1,25 @@
+{
+  "relationships": [],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "nom",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "prenom",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 3,
+      "fieldName": "dateNaissance",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "changelogDate": "20150914232906",
+  "dto": "no",
+  "pagination": "no",
+  "fieldsContainLocalDate": true,
+  "fieldsContainCustomTime": true
+}

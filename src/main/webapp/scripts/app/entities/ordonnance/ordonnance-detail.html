@@ -1,0 +1,38 @@
+
+<div>
+    <h2><span translate="cmsApp.ordonnance.detail.title">Ordonnance</span> {{ordonnance.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th translate="entity.detail.field">Field</th>
+                <th translate="entity.detail.value">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span translate="cmsApp.ordonnance.date">Date</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{ordonnance.date}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="cmsApp.ordonnance.ligne">Ligne</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{ordonnance.ligne}}</span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

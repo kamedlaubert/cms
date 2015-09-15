@@ -1,0 +1,16 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipName": "personnel",
+      "relationshipFieldName": "personnel",
+      "otherEntityName": "personnel",
+      "relationshipType": "one-to-many",
+      "otherEntityRelationshipName": "conjoint"
+    }
+  ],
+  "fields": [],
+  "changelogDate": "20150914232906",
+  "dto": "no",
+  "pagination": "no"
+}

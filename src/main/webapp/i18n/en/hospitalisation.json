@@ -1,0 +1,28 @@
+{
+    "cmsApp": {
+        "hospitalisation" : {
+            "home": {
+                "title": "Hospitalisations",
+                "createLabel": "Create a new Hospitalisation",
+                "createOrEditLabel": "Create or edit a Hospitalisation"
+            },
+            "created": "A new Hospitalisation is created with identifier {{ param }}",
+            "updated": "A Hospitalisation is updated with identifier {{ param }}",
+            "deleted": "A Hospitalisation is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Hospitalisation {{ id }}?"
+            },
+            "detail": {
+                "title": "Hospitalisation"
+            },
+            "code": "Code",
+            "dateAdmission": "DateAdmission",
+            "dateSorti": "DateSorti",
+            "motif": "Motif",
+            "bilan": "Bilan",
+            "consultation": "Consultation",
+            "bPC": "BPC",
+            "institutionSanitaire": "InstitutionSanitaire"
+        }
+    }
+}

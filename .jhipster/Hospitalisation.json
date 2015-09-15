@@ -1,0 +1,62 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipName": "consultation",
+      "relationshipFieldName": "consultation",
+      "otherEntityName": "consultation",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipId": 2,
+      "relationshipName": "bPC",
+      "relationshipFieldName": "bPC",
+      "otherEntityName": "bPC",
+      "relationshipType": "one-to-one",
+      "otherEntityRelationshipName": "hospitalisation",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipId": 3,
+      "relationshipName": "institutionSanitaire",
+      "relationshipFieldName": "institutionSanitaire",
+      "otherEntityName": "institutionSanitaire",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "id"
+    }
+  ],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "code",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "dateAdmission",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldId": 3,
+      "fieldName": "dateSorti",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldId": 4,
+      "fieldName": "motif",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 5,
+      "fieldName": "bilan",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20150914232906",
+  "dto": "no",
+  "pagination": "no",
+  "fieldsContainLocalDate": true,
+  "fieldsContainCustomTime": true
+}

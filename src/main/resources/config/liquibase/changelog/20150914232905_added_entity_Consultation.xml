@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <property name="now" value="now()" dbms="mysql,h2"/>
+    <property name="now" value="current_timestamp" dbms="postgresql"/>
+    <property name="now" value="sysdate" dbms="oracle"/>
+
+    <property name="autoIncrement" value="true" dbms="mysql,h2,postgresql"/>
+    <property name="autoIncrement" value="false" dbms="oracle"/>
+
+    <property name="floatType" value="real" dbms="postgresql, h2"/>
+    <property name="floatType" value="float" dbms="mysql, oracle"/>
+
+    <!--
+        Added the entity Consultation.
+    -->
+    <changeSet id="20150914232905" author="jhipster">
+        <createTable tableName="CONSULTATION">
+            <column name="id" type="bigint" autoIncrement="${autoIncrement}" >
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="motif" type="varchar(255)"/>
+            <column name="date" type="date"/>
+            <column name="diagnostique_consul" type="varchar(255)"/>
+            <column name="personnel_id" type="bigint"/>
+        </createTable>
+        
+        <createTable tableName="CONSULTATION_CONDUIRE">
+            <column name="conduires_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="consultations_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <addPrimaryKey columnNames="consultations_id, conduires_id" tableName="CONSULTATION_CONDUIRE"/>
+
+        <addForeignKeyConstraint baseColumnNames="consultations_id"
+                                 baseTableName="CONSULTATION_CONDUIRE"
+                                 constraintName="fk_consultation_conduire_ordonnance_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="CONSULTATION"/>
+
+        <addForeignKeyConstraint baseColumnNames="conduires_id"
+                                 baseTableName="CONSULTATION_CONDUIRE"
+                                 constraintName="fk_ordonnance_conduire_consultation_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="ORDONNANCE"/>
+        
+        <addForeignKeyConstraint baseColumnNames="personnel_id"
+                                 baseTableName="CONSULTATION"
+                                 constraintName="fk_consultation_personnel_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="PERSONNEL"/>
+
+    </changeSet>
+</databaseChangeLog>

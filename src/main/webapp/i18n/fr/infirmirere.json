@@ -1,0 +1,18 @@
+{
+    "cmsApp": {
+        "infirmirere" : {
+            "home": {
+                "title": "Infirmireres",
+                "createLabel": "Créer un nouveau Infirmirere",
+                "createOrEditLabel": "Créer ou éditer un Infirmirere"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Infirmirere {{ id }} ?"
+            },
+            "detail": {
+                "title": "Infirmirere"
+            }
+        }
+    }
+}
+

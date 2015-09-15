@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_dje0UFszEeWeNs1srAMN0w" name="cmssoft">
+  <eAnnotations xmi:id="_dje0UVszEeWeNs1srAMN0w" source="Objing">
+    <contents xmi:type="uml:Property" xmi:id="_dje0UlszEeWeNs1srAMN0w" name="exporterVersion">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_dje0U1szEeWeNs1srAMN0w" value="3.0.0"/>
+    </contents>
+  </eAnnotations>
+  <packagedElement xmi:type="uml:Class" xmi:id="_dje0VFszEeWeNs1srAMN0w" name="Medecin">
+    <generalization xmi:id="_dje0VVszEeWeNs1srAMN0w" general="_dje0cFszEeWeNs1srAMN0w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_dje0VlszEeWeNs1srAMN0w" name="Consultation">
+    <ownedAttribute xmi:id="_dje0V1szEeWeNs1srAMN0w" name="effectuer" visibility="public" type="_dje0cFszEeWeNs1srAMN0w" association="_dje0YlszEeWeNs1srAMN0w"/>
+    <ownedAttribute xmi:id="_dje0WFszEeWeNs1srAMN0w" name="conduire" visibility="public" type="_dje0r1szEeWeNs1srAMN0w" association="_dje0Z1szEeWeNs1srAMN0w">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dje0WVszEeWeNs1srAMN0w" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dje0WlszEeWeNs1srAMN0w"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_dje0W1szEeWeNs1srAMN0w" name="symptome" visibility="public" type="_dje0zFszEeWeNs1srAMN0w" association="_dje0alszEeWeNs1srAMN0w"/>
+    <ownedAttribute xmi:id="_dje0XFszEeWeNs1srAMN0w" name="hospitalisation" visibility="public" type="_dje0gVszEeWeNs1srAMN0w" association="_dje0blszEeWeNs1srAMN0w">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dje0XVszEeWeNs1srAMN0w" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dje0XlszEeWeNs1srAMN0w"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_dje0X1szEeWeNs1srAMN0w" name="motif" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_dje0YFszEeWeNs1srAMN0w" name="date" visibility="public" type="_dje0y1szEeWeNs1srAMN0w" isUnique="false"/>
+    <ownedAttribute xmi:id="_dje0YVszEeWeNs1srAMN0w" name="diagnostique_consul" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_dje0YlszEeWeNs1srAMN0w" memberEnd="_dje0V1szEeWeNs1srAMN0w _dje0Y1szEeWeNs1srAMN0w">
+    <ownedEnd xmi:id="_dje0Y1szEeWeNs1srAMN0w" visibility="public" type="_dje0VlszEeWeNs1srAMN0w" association="_dje0YlszEeWeNs1srAMN0w">
+      <ownedComment xmi:id="_dje0ZFszEeWeNs1srAMN0w">
+        <body></body>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dje0ZVszEeWeNs1srAMN0w" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dje0ZlszEeWeNs1srAMN0w"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_dje0Z1szEeWeNs1srAMN0w" memberEnd="_dje0WFszEeWeNs1srAMN0w _dje0aFszEeWeNs1srAMN0w">
+    <ownedEnd xmi:id="_dje0aFszEeWeNs1srAMN0w" visibility="public" type="_dje0VlszEeWeNs1srAMN0w" association="_dje0Z1szEeWeNs1srAMN0w">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dje0aVszEeWeNs1srAMN0w" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_dje0alszEeWeNs1srAMN0w" memberEnd="_dje0W1szEeWeNs1srAMN0w _dje0a1szEeWeNs1srAMN0w">
+    <ownedEnd xmi:id="_dje0a1szEeWeNs1srAMN0w" visibility="public" type="_dje0VlszEeWeNs1srAMN0w" association="_dje0alszEeWeNs1srAMN0w">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dje0bFszEeWeNs1srAMN0w" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dje0bVszEeWeNs1srAMN0w"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_dje0blszEeWeNs1srAMN0w" memberEnd="_dje0XFszEeWeNs1srAMN0w _dje0b1szEeWeNs1srAMN0w">
+    <ownedEnd xmi:id="_dje0b1szEeWeNs1srAMN0w" visibility="public" type="_dje0VlszEeWeNs1srAMN0w" association="_dje0blszEeWeNs1srAMN0w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_dje0cFszEeWeNs1srAMN0w" name="Practiciens">
+    <ownedAttribute xmi:id="_dje0cVszEeWeNs1srAMN0w" name="matricule" visibility="public" isUnique="false">
+      <ownedComment xmi:id="_dje0clszEeWeNs1srAMN0w">
+        <body></body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_dje0c1szEeWeNs1srAMN0w" name="tel" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_dje0dFszEeWeNs1srAMN0w" name="email" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_dje0dVszEeWeNs1srAMN0w" name="type" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_dje0dlszEeWeNs1srAMN0w" name="Examens">
+    <ownedAttribute xmi:id="_dje0d1szEeWeNs1srAMN0w" name="consultation" visibility="public" type="_dje0VlszEeWeNs1srAMN0w" association="_dje0fVszEeWeNs1srAMN0w">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dje0eFszEeWeNs1srAMN0w" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dje0eVszEeWeNs1srAMN0w"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_dje0elszEeWeNs1srAMN0w" name="type" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_dje0e1szEeWeNs1srAMN0w" name="libelle" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_dje0fFszEeWeNs1srAMN0w" name="date" visibility="public" type="_dje0y1szEeWeNs1srAMN0w" isUnique="false"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_dje0fVszEeWeNs1srAMN0w" memberEnd="_dje0d1szEeWeNs1srAMN0w _dje0flszEeWeNs1srAMN0w">
+    <ownedEnd xmi:id="_dje0flszEeWeNs1srAMN0w" visibility="public" type="_dje0dlszEeWeNs1srAMN0w" association="_dje0fVszEeWeNs1srAMN0w">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dje0f1szEeWeNs1srAMN0w" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dje0gFszEeWeNs1srAMN0w"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_dje0gVszEeWeNs1srAMN0w" name="Hospitalisation">
+    <ownedAttribute xmi:id="_dje0glszEeWeNs1srAMN0w" name="bPC" visibility="public" type="_dje0vVszEeWeNs1srAMN0w" association="_dje0iFszEeWeNs1srAMN0w"/>
+    <ownedAttribute xmi:id="_dje0g1szEeWeNs1srAMN0w" name="code" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_dje0hFszEeWeNs1srAMN0w" name="dateAdmission" visibility="public" type="_dje0y1szEeWeNs1srAMN0w" isUnique="false"/>
+    <ownedAttribute xmi:id="_dje0hVszEeWeNs1srAMN0w" name="dateSorti" visibility="public" type="_dje0y1szEeWeNs1srAMN0w" isUnique="false"/>
+    <ownedAttribute xmi:id="_dje0hlszEeWeNs1srAMN0w" name="motif" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_dje0h1szEeWeNs1srAMN0w" name="bilan" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_dje0iFszEeWeNs1srAMN0w" memberEnd="_dje0glszEeWeNs1srAMN0w _dje0iVszEeWeNs1srAMN0w">
+    <ownedEnd xmi:id="_dje0iVszEeWeNs1srAMN0w" visibility="public" type="_dje0gVszEeWeNs1srAMN0w" association="_dje0iFszEeWeNs1srAMN0w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_dje0ilszEeWeNs1srAMN0w" name="Personnel">
+    <ownedAttribute xmi:id="_dje0i1szEeWeNs1srAMN0w" name="realiser" visibility="public" type="_dje0VlszEeWeNs1srAMN0w" association="_dje0mVszEeWeNs1srAMN0w">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dje0jFszEeWeNs1srAMN0w" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_dje0jVszEeWeNs1srAMN0w" name="matricule" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_dje0jlszEeWeNs1srAMN0w" name="nom" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_dje0j1szEeWeNs1srAMN0w" name="prenom" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_dje0kFszEeWeNs1srAMN0w" name="direction" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_dje0kVszEeWeNs1srAMN0w" name="age" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_dje0klszEeWeNs1srAMN0w" name="sexe" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_dje0k1szEeWeNs1srAMN0w" name="type" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_dje0lFszEeWeNs1srAMN0w" name="famille" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_dje0lVszEeWeNs1srAMN0w" name="groupeSanguin" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_dje0llszEeWeNs1srAMN0w" name="infosCompl" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_dje0l1szEeWeNs1srAMN0w" name="allergie" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_dje0mFszEeWeNs1srAMN0w" name="statut" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_dje0mVszEeWeNs1srAMN0w" memberEnd="_dje0i1szEeWeNs1srAMN0w _dje0mlszEeWeNs1srAMN0w">
+    <ownedEnd xmi:id="_dje0mlszEeWeNs1srAMN0w" visibility="public" type="_dje0ilszEeWeNs1srAMN0w" association="_dje0mVszEeWeNs1srAMN0w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_dje0m1szEeWeNs1srAMN0w" name="InstitutionSanitaire">
+    <ownedAttribute xmi:id="_dje0nFszEeWeNs1srAMN0w" name="hospitalisation" visibility="public" type="_dje0gVszEeWeNs1srAMN0w" association="_dje0olszEeWeNs1srAMN0w">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dje0nVszEeWeNs1srAMN0w" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dje0nlszEeWeNs1srAMN0w"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_dje0n1szEeWeNs1srAMN0w" name="raisonSocial" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_dje0oFszEeWeNs1srAMN0w" name="nom" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_dje0oVszEeWeNs1srAMN0w" name="type" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_dje0olszEeWeNs1srAMN0w" memberEnd="_dje0nFszEeWeNs1srAMN0w _dje0o1szEeWeNs1srAMN0w">
+    <ownedEnd xmi:id="_dje0o1szEeWeNs1srAMN0w" visibility="public" type="_dje0m1szEeWeNs1srAMN0w" association="_dje0olszEeWeNs1srAMN0w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_dje0pFszEeWeNs1srAMN0w" name="Infirmirere">
+    <generalization xmi:id="_dje0pVszEeWeNs1srAMN0w" general="_dje0cFszEeWeNs1srAMN0w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_dje0plszEeWeNs1srAMN0w" name="Personnel_Externe">
+    <generalization xmi:id="_dje0p1szEeWeNs1srAMN0w" general="_dje0x1szEeWeNs1srAMN0w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_dje0qFszEeWeNs1srAMN0w" name="Conjoint">
+    <generalization xmi:id="_dje0qVszEeWeNs1srAMN0w" general="_dje0x1szEeWeNs1srAMN0w"/>
+    <ownedAttribute xmi:id="_dje0qlszEeWeNs1srAMN0w" name="personnel" visibility="public" type="_dje0ilszEeWeNs1srAMN0w" association="_dje0q1szEeWeNs1srAMN0w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_dje0q1szEeWeNs1srAMN0w" memberEnd="_dje0qlszEeWeNs1srAMN0w _dje0rFszEeWeNs1srAMN0w">
+    <ownedEnd xmi:id="_dje0rFszEeWeNs1srAMN0w" visibility="public" type="_dje0qFszEeWeNs1srAMN0w" association="_dje0q1szEeWeNs1srAMN0w">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dje0rVszEeWeNs1srAMN0w" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dje0rlszEeWeNs1srAMN0w"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_dje0r1szEeWeNs1srAMN0w" name="Ordonnance">
+    <ownedAttribute xmi:id="_dje0sFszEeWeNs1srAMN0w" name="date" visibility="public" type="_dje0y1szEeWeNs1srAMN0w" isUnique="false"/>
+    <ownedAttribute xmi:id="_dje0sVszEeWeNs1srAMN0w" name="ligne" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_dje0slszEeWeNs1srAMN0w" name="Medicament">
+    <ownedAttribute xmi:id="_dje0s1szEeWeNs1srAMN0w" name="ordonnance" visibility="public" type="_dje0r1szEeWeNs1srAMN0w" association="_dje0uVszEeWeNs1srAMN0w">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dje0tFszEeWeNs1srAMN0w" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dje0tVszEeWeNs1srAMN0w"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_dje0tlszEeWeNs1srAMN0w" name="nom" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_dje0t1szEeWeNs1srAMN0w" name="posologie" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_dje0uFszEeWeNs1srAMN0w" name="indParticulier" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_dje0uVszEeWeNs1srAMN0w" memberEnd="_dje0s1szEeWeNs1srAMN0w _dje0ulszEeWeNs1srAMN0w">
+    <ownedEnd xmi:id="_dje0ulszEeWeNs1srAMN0w" visibility="public" type="_dje0slszEeWeNs1srAMN0w" association="_dje0uVszEeWeNs1srAMN0w">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dje0u1szEeWeNs1srAMN0w" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dje0vFszEeWeNs1srAMN0w"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_dje0vVszEeWeNs1srAMN0w" name="BPC">
+    <ownedAttribute xmi:id="_dje0vlszEeWeNs1srAMN0w" name="numeroBpc" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_dje0v1szEeWeNs1srAMN0w" name="objectBpc" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_dje0wFszEeWeNs1srAMN0w" name="Enfant">
+    <generalization xmi:id="_dje0wVszEeWeNs1srAMN0w" general="_dje0x1szEeWeNs1srAMN0w"/>
+    <ownedAttribute xmi:id="_dje0wlszEeWeNs1srAMN0w" name="personnel" visibility="public" type="_dje0ilszEeWeNs1srAMN0w" association="_dje0w1szEeWeNs1srAMN0w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_dje0w1szEeWeNs1srAMN0w" memberEnd="_dje0wlszEeWeNs1srAMN0w _dje0xFszEeWeNs1srAMN0w">
+    <ownedEnd xmi:id="_dje0xFszEeWeNs1srAMN0w" visibility="public" type="_dje0wFszEeWeNs1srAMN0w" association="_dje0w1szEeWeNs1srAMN0w">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dje0xVszEeWeNs1srAMN0w" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dje0xlszEeWeNs1srAMN0w"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_dje0x1szEeWeNs1srAMN0w" name="Patient">
+    <ownedAttribute xmi:id="_dje0yFszEeWeNs1srAMN0w" name="nom" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_dje0yVszEeWeNs1srAMN0w" name="prenom" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_dje0ylszEeWeNs1srAMN0w" name="dateNaissance" visibility="public" type="_dje0y1szEeWeNs1srAMN0w" isOrdered="true" isUnique="false"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_dje0y1szEeWeNs1srAMN0w" name="LocalDate"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_dje0zFszEeWeNs1srAMN0w" name="Symptome">
+    <ownedAttribute xmi:id="_dje0zVszEeWeNs1srAMN0w" name="libelle" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_dje0zlszEeWeNs1srAMN0w" name="description" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+</uml:Model>

@@ -1,0 +1,32 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipName": "hospitalisation",
+      "relationshipFieldName": "hospitalisation",
+      "otherEntityName": "hospitalisation",
+      "relationshipType": "one-to-many",
+      "otherEntityRelationshipName": "institutionSanitaire"
+    }
+  ],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "raisonSocial",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "nom",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 3,
+      "fieldName": "type",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20150914232906",
+  "dto": "no",
+  "pagination": "no"
+}

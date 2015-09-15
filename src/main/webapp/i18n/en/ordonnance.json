@@ -1,0 +1,24 @@
+{
+    "cmsApp": {
+        "ordonnance" : {
+            "home": {
+                "title": "Ordonnances",
+                "createLabel": "Create a new Ordonnance",
+                "createOrEditLabel": "Create or edit a Ordonnance"
+            },
+            "created": "A new Ordonnance is created with identifier {{ param }}",
+            "updated": "A Ordonnance is updated with identifier {{ param }}",
+            "deleted": "A Ordonnance is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Ordonnance {{ id }}?"
+            },
+            "detail": {
+                "title": "Ordonnance"
+            },
+            "date": "Date",
+            "ligne": "Ligne",
+            "consultation": "Consultation",
+            "medicament": "Medicament"
+        }
+    }
+}

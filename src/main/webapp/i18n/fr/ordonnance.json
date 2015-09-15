@@ -1,0 +1,22 @@
+{
+    "cmsApp": {
+        "ordonnance" : {
+            "home": {
+                "title": "Ordonnances",
+                "createLabel": "Créer un nouveau Ordonnance",
+                "createOrEditLabel": "Créer ou éditer un Ordonnance"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Ordonnance {{ id }} ?"
+            },
+            "detail": {
+                "title": "Ordonnance"
+            },
+            "date": "Date",
+            "ligne": "Ligne",
+            "consultation": "Consultation",
+            "medicament": "Medicament"
+        }
+    }
+}
+

@@ -1,0 +1,51 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myExamensLabel" translate="cmsApp.examens.home.createOrEditLabel">Create or edit a Examens</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="examens.id" readonly>
+        </div>
+
+        <div class="form-group">
+            <label translate="cmsApp.examens.type" for="field_type">Type</label>
+            <input type="text" class="form-control" name="type" id="field_type"
+                    ng-model="examens.type"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="cmsApp.examens.libelle" for="field_libelle">Libelle</label>
+            <input type="text" class="form-control" name="libelle" id="field_libelle"
+                    ng-model="examens.libelle"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="cmsApp.examens.date" for="field_date">Date</label>
+            <input type="date" class="form-control" name="date" id="field_date"
+                    ng-model="examens.date"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="cmsApp.examens.consultation" for="field_consultation">consultation</label>
+            <select class="form-control" id="field_consultation" multiple name="consultation" ng-model="examens.consultations" ng-options="consultation as consultation.id for consultation in consultations track by consultation.id"></select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || editForm.$submitted" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

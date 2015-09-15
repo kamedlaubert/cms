@@ -1,0 +1,93 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipName": "realiser",
+      "relationshipFieldName": "realiser",
+      "otherEntityName": "consultation",
+      "relationshipType": "one-to-many",
+      "otherEntityRelationshipName": "personnel"
+    },
+    {
+      "relationshipId": 2,
+      "relationshipName": "conjoint",
+      "relationshipFieldName": "conjoint",
+      "otherEntityName": "conjoint",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipId": 3,
+      "relationshipName": "enfant",
+      "relationshipFieldName": "enfant",
+      "otherEntityName": "enfant",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "id"
+    }
+  ],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "matricule",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "nom",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 3,
+      "fieldName": "prenom",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 4,
+      "fieldName": "direction",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 5,
+      "fieldName": "age",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 6,
+      "fieldName": "sexe",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 7,
+      "fieldName": "type",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 8,
+      "fieldName": "famille",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 9,
+      "fieldName": "groupeSanguin",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 10,
+      "fieldName": "infosCompl",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 11,
+      "fieldName": "allergie",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 12,
+      "fieldName": "statut",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20150914232906",
+  "dto": "no",
+  "pagination": "no"
+}

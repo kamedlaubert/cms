@@ -1,0 +1,85 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myHospitalisationLabel" translate="cmsApp.hospitalisation.home.createOrEditLabel">Create or edit a Hospitalisation</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="hospitalisation.id" readonly>
+        </div>
+
+        <div class="form-group">
+            <label translate="cmsApp.hospitalisation.code" for="field_code">Code</label>
+            <input type="text" class="form-control" name="code" id="field_code"
+                    ng-model="hospitalisation.code"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="cmsApp.hospitalisation.dateAdmission" for="field_dateAdmission">DateAdmission</label>
+            <input type="date" class="form-control" name="dateAdmission" id="field_dateAdmission"
+                    ng-model="hospitalisation.dateAdmission"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="cmsApp.hospitalisation.dateSorti" for="field_dateSorti">DateSorti</label>
+            <input type="date" class="form-control" name="dateSorti" id="field_dateSorti"
+                    ng-model="hospitalisation.dateSorti"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="cmsApp.hospitalisation.motif" for="field_motif">Motif</label>
+            <input type="text" class="form-control" name="motif" id="field_motif"
+                    ng-model="hospitalisation.motif"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="cmsApp.hospitalisation.bilan" for="field_bilan">Bilan</label>
+            <input type="text" class="form-control" name="bilan" id="field_bilan"
+                    ng-model="hospitalisation.bilan"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="cmsApp.hospitalisation.consultation" for="field_consultation">consultation</label>
+            
+            <select class="form-control" id="field_consultation" name="consultation" ng-model="hospitalisation.consultation" ng-options="consultation as consultation.id for consultation in consultations track by consultation.id">
+                <option value=""></option>
+            </select>
+            
+        </div>
+        <div class="form-group">
+            <label translate="cmsApp.hospitalisation.bPC" for="field_bPC">bPC</label>
+            
+            <select class="form-control" id="field_bPC" name="bPC" ng-model="hospitalisation.bPC" ng-options="bPC as bPC.id for bPC in bpcs | orderBy:'id' track by bPC.id">
+                <option value=""></option>
+            </select>
+            
+        </div>
+        <div class="form-group">
+            <label translate="cmsApp.hospitalisation.institutionSanitaire" for="field_institutionSanitaire">institutionSanitaire</label>
+            
+            <select class="form-control" id="field_institutionSanitaire" name="institutionSanitaire" ng-model="hospitalisation.institutionSanitaire" ng-options="institutionSanitaire as institutionSanitaire.id for institutionSanitaire in institutionsanitaires track by institutionSanitaire.id">
+                <option value=""></option>
+            </select>
+            
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || editForm.$submitted" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

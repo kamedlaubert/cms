@@ -1,0 +1,86 @@
+
+<div>
+    <h2><span translate="cmsApp.hospitalisation.detail.title">Hospitalisation</span> {{hospitalisation.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th translate="entity.detail.field">Field</th>
+                <th translate="entity.detail.value">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span translate="cmsApp.hospitalisation.code">Code</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{hospitalisation.code}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="cmsApp.hospitalisation.dateAdmission">DateAdmission</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{hospitalisation.dateAdmission}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="cmsApp.hospitalisation.dateSorti">DateSorti</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{hospitalisation.dateSorti}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="cmsApp.hospitalisation.motif">Motif</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{hospitalisation.motif}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="cmsApp.hospitalisation.bilan">Bilan</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{hospitalisation.bilan}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="cmsApp.hospitalisation.consultation">consultation</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="consultation.detail({id:hospitalisation.consultation.id})">{{hospitalisation.consultation.id}}</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="cmsApp.hospitalisation.bPC">bPC</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="bPC.detail({id:hospitalisation.bPC.id})">{{hospitalisation.bPC.id}}</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="cmsApp.hospitalisation.institutionSanitaire">institutionSanitaire</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="institutionSanitaire.detail({id:hospitalisation.institutionSanitaire.id})">{{hospitalisation.institutionSanitaire.id}}</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

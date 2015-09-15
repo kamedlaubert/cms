@@ -1,0 +1,62 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myPracticiensLabel" translate="cmsApp.practiciens.home.createOrEditLabel">Create or edit a Practiciens</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="practiciens.id" readonly>
+        </div>
+
+        <div class="form-group">
+            <label translate="cmsApp.practiciens.matricule" for="field_matricule">Matricule</label>
+            <input type="text" class="form-control" name="matricule" id="field_matricule"
+                    ng-model="practiciens.matricule"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="cmsApp.practiciens.tel" for="field_tel">Tel</label>
+            <input type="text" class="form-control" name="tel" id="field_tel"
+                    ng-model="practiciens.tel"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="cmsApp.practiciens.email" for="field_email">Email</label>
+            <input type="text" class="form-control" name="email" id="field_email"
+                    ng-model="practiciens.email"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="cmsApp.practiciens.type" for="field_type">Type</label>
+            <input type="text" class="form-control" name="type" id="field_type"
+                    ng-model="practiciens.type"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="cmsApp.practiciens.consultation" for="field_consultation">consultation</label>
+            
+            <select class="form-control" id="field_consultation" name="consultation" ng-model="practiciens.consultation" ng-options="consultation as consultation.id for consultation in consultations track by consultation.id">
+                <option value=""></option>
+            </select>
+            
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || editForm.$submitted" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

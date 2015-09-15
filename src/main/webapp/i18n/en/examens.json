@@ -1,0 +1,24 @@
+{
+    "cmsApp": {
+        "examens" : {
+            "home": {
+                "title": "Examenss",
+                "createLabel": "Create a new Examens",
+                "createOrEditLabel": "Create or edit a Examens"
+            },
+            "created": "A new Examens is created with identifier {{ param }}",
+            "updated": "A Examens is updated with identifier {{ param }}",
+            "deleted": "A Examens is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Examens {{ id }}?"
+            },
+            "detail": {
+                "title": "Examens"
+            },
+            "type": "Type",
+            "libelle": "Libelle",
+            "date": "Date",
+            "consultation": "Consultation"
+        }
+    }
+}

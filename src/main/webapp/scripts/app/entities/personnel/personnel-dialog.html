@@ -1,0 +1,126 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myPersonnelLabel" translate="cmsApp.personnel.home.createOrEditLabel">Create or edit a Personnel</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="personnel.id" readonly>
+        </div>
+
+        <div class="form-group">
+            <label translate="cmsApp.personnel.matricule" for="field_matricule">Matricule</label>
+            <input type="text" class="form-control" name="matricule" id="field_matricule"
+                    ng-model="personnel.matricule"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="cmsApp.personnel.nom" for="field_nom">Nom</label>
+            <input type="text" class="form-control" name="nom" id="field_nom"
+                    ng-model="personnel.nom"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="cmsApp.personnel.prenom" for="field_prenom">Prenom</label>
+            <input type="text" class="form-control" name="prenom" id="field_prenom"
+                    ng-model="personnel.prenom"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="cmsApp.personnel.direction" for="field_direction">Direction</label>
+            <input type="text" class="form-control" name="direction" id="field_direction"
+                    ng-model="personnel.direction"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="cmsApp.personnel.age" for="field_age">Age</label>
+            <input type="text" class="form-control" name="age" id="field_age"
+                    ng-model="personnel.age"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="cmsApp.personnel.sexe" for="field_sexe">Sexe</label>
+            <input type="text" class="form-control" name="sexe" id="field_sexe"
+                    ng-model="personnel.sexe"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="cmsApp.personnel.type" for="field_type">Type</label>
+            <input type="text" class="form-control" name="type" id="field_type"
+                    ng-model="personnel.type"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="cmsApp.personnel.famille" for="field_famille">Famille</label>
+            <input type="text" class="form-control" name="famille" id="field_famille"
+                    ng-model="personnel.famille"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="cmsApp.personnel.groupeSanguin" for="field_groupeSanguin">GroupeSanguin</label>
+            <input type="text" class="form-control" name="groupeSanguin" id="field_groupeSanguin"
+                    ng-model="personnel.groupeSanguin"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="cmsApp.personnel.infosCompl" for="field_infosCompl">InfosCompl</label>
+            <input type="text" class="form-control" name="infosCompl" id="field_infosCompl"
+                    ng-model="personnel.infosCompl"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="cmsApp.personnel.allergie" for="field_allergie">Allergie</label>
+            <input type="text" class="form-control" name="allergie" id="field_allergie"
+                    ng-model="personnel.allergie"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="cmsApp.personnel.statut" for="field_statut">Statut</label>
+            <input type="text" class="form-control" name="statut" id="field_statut"
+                    ng-model="personnel.statut"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="cmsApp.personnel.conjoint" for="field_conjoint">conjoint</label>
+            
+            <select class="form-control" id="field_conjoint" name="conjoint" ng-model="personnel.conjoint" ng-options="conjoint as conjoint.id for conjoint in conjoints track by conjoint.id">
+                <option value=""></option>
+            </select>
+            
+        </div>
+        <div class="form-group">
+            <label translate="cmsApp.personnel.enfant" for="field_enfant">enfant</label>
+            
+            <select class="form-control" id="field_enfant" name="enfant" ng-model="personnel.enfant" ng-options="enfant as enfant.id for enfant in enfants track by enfant.id">
+                <option value=""></option>
+            </select>
+            
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || editForm.$submitted" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

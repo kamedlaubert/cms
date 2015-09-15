@@ -1,0 +1,29 @@
+{
+    "cmsApp": {
+        "consultation" : {
+            "home": {
+                "title": "Consultations",
+                "createLabel": "Create a new Consultation",
+                "createOrEditLabel": "Create or edit a Consultation"
+            },
+            "created": "A new Consultation is created with identifier {{ param }}",
+            "updated": "A Consultation is updated with identifier {{ param }}",
+            "deleted": "A Consultation is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Consultation {{ id }}?"
+            },
+            "detail": {
+                "title": "Consultation"
+            },
+            "motif": "Motif",
+            "date": "Date",
+            "diagnostiqueConsul": "DiagnostiqueConsul",
+            "effectuer": "Effectuer",
+            "conduire": "Conduire",
+            "symptome": "Symptome",
+            "hospitalisation": "Hospitalisation",
+            "examens": "Examens",
+            "personnel": "Personnel"
+        }
+    }
+}

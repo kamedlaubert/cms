@@ -1,0 +1,64 @@
+
+<div>
+    <h2><span translate="cmsApp.consultation.detail.title">Consultation</span> {{consultation.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th translate="entity.detail.field">Field</th>
+                <th translate="entity.detail.value">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span translate="cmsApp.consultation.motif">Motif</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{consultation.motif}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="cmsApp.consultation.date">Date</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{consultation.date}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="cmsApp.consultation.diagnostiqueConsul">DiagnostiqueConsul</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{consultation.diagnostiqueConsul}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="cmsApp.consultation.conduire">conduire</span>
+                </td>
+                <td>
+                    <span ng-repeat="conduire in consultation.conduires">
+                        <a class="form-control-static" ui-sref="ordonnance.detail({id: {{conduire.id}}})">{{conduire.id}}</a>{{$last ? '' : ', '}}
+                    <span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="cmsApp.consultation.personnel">personnel</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="personnel.detail({id:consultation.personnel.id})">{{consultation.personnel.id}}</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

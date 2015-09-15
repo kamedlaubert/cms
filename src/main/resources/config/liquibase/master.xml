@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <include file="classpath:config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150914232905_added_entity_Medecin.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150914232906_added_entity_InstitutionSanitaire.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150914232906_added_entity_Infirmirere.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150914232906_added_entity_Personnel_Externe.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150914232906_added_entity_Conjoint.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150914232906_added_entity_Ordonnance.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150914232906_added_entity_Medicament.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150914232906_added_entity_BPC.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150914232906_added_entity_Enfant.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150914232906_added_entity_Patient.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150914232906_added_entity_Personnel.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150914232905_added_entity_Consultation.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150914232906_added_entity_Practiciens.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150914232906_added_entity_Examens.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150914232906_added_entity_Hospitalisation.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150914232906_added_entity_Symptome.xml" relativeToChangelogFile="false"/>
+    <!-- JHipster will add liquibase changelogs here -->
+</databaseChangeLog>

@@ -1,0 +1,21 @@
+{
+    "cmsApp": {
+        "bPC" : {
+            "home": {
+                "title": "BPCs",
+                "createLabel": "Créer un nouveau BPC",
+                "createOrEditLabel": "Créer ou éditer un BPC"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le BPC {{ id }} ?"
+            },
+            "detail": {
+                "title": "BPC"
+            },
+            "numeroBpc": "NumeroBpc",
+            "objectBpc": "ObjectBpc",
+            "hospitalisation": "Hospitalisation"
+        }
+    }
+}
+

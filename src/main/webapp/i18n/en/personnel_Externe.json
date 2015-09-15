@@ -1,0 +1,20 @@
+{
+    "cmsApp": {
+        "personnel_Externe" : {
+            "home": {
+                "title": "Personnel_Externes",
+                "createLabel": "Create a new Personnel_Externe",
+                "createOrEditLabel": "Create or edit a Personnel_Externe"
+            },
+            "created": "A new Personnel_Externe is created with identifier {{ param }}",
+            "updated": "A Personnel_Externe is updated with identifier {{ param }}",
+            "deleted": "A Personnel_Externe is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Personnel_Externe {{ id }}?"
+            },
+            "detail": {
+                "title": "Personnel_Externe"
+            }
+        }
+    }
+}

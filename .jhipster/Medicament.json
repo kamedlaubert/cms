@@ -1,0 +1,33 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipName": "ordonnance",
+      "relationshipFieldName": "ordonnance",
+      "otherEntityName": "ordonnance",
+      "relationshipType": "many-to-many",
+      "otherEntityField": "id",
+      "ownerSide": true
+    }
+  ],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "nom",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "posologie",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 3,
+      "fieldName": "indParticulier",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20150914232906",
+  "dto": "no",
+  "pagination": "no"
+}

@@ -1,0 +1,18 @@
+{
+    "cmsApp": {
+        "medecin" : {
+            "home": {
+                "title": "Medecins",
+                "createLabel": "Créer un nouveau Medecin",
+                "createOrEditLabel": "Créer ou éditer un Medecin"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Medecin {{ id }} ?"
+            },
+            "detail": {
+                "title": "Medecin"
+            }
+        }
+    }
+}
+

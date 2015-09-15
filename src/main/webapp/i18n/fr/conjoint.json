@@ -1,0 +1,19 @@
+{
+    "cmsApp": {
+        "conjoint" : {
+            "home": {
+                "title": "Conjoints",
+                "createLabel": "Créer un nouveau Conjoint",
+                "createOrEditLabel": "Créer ou éditer un Conjoint"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Conjoint {{ id }} ?"
+            },
+            "detail": {
+                "title": "Conjoint"
+            },
+            "personnel": "Personnel"
+        }
+    }
+}
+

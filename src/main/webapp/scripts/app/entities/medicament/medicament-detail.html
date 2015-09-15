@@ -1,0 +1,56 @@
+
+<div>
+    <h2><span translate="cmsApp.medicament.detail.title">Medicament</span> {{medicament.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th translate="entity.detail.field">Field</th>
+                <th translate="entity.detail.value">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span translate="cmsApp.medicament.nom">Nom</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{medicament.nom}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="cmsApp.medicament.posologie">Posologie</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{medicament.posologie}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="cmsApp.medicament.indParticulier">IndParticulier</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{medicament.indParticulier}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="cmsApp.medicament.ordonnance">ordonnance</span>
+                </td>
+                <td>
+                    <span ng-repeat="ordonnance in medicament.ordonnances">
+                        <a class="form-control-static" ui-sref="ordonnance.detail({id: {{ordonnance.id}}})">{{ordonnance.id}}</a>{{$last ? '' : ', '}}
+                    <span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

@@ -1,0 +1,33 @@
+{
+    "cmsApp": {
+        "personnel" : {
+            "home": {
+                "title": "Personnels",
+                "createLabel": "Créer un nouveau Personnel",
+                "createOrEditLabel": "Créer ou éditer un Personnel"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Personnel {{ id }} ?"
+            },
+            "detail": {
+                "title": "Personnel"
+            },
+            "matricule": "Matricule",
+            "nom": "Nom",
+            "prenom": "Prenom",
+            "direction": "Direction",
+            "age": "Age",
+            "sexe": "Sexe",
+            "type": "Type",
+            "famille": "Famille",
+            "groupeSanguin": "GroupeSanguin",
+            "infosCompl": "InfosCompl",
+            "allergie": "Allergie",
+            "statut": "Statut",
+            "realiser": "Realiser",
+            "conjoint": "Conjoint",
+            "enfant": "Enfant"
+        }
+    }
+}
+

@@ -1,0 +1,18 @@
+{
+    "cmsApp": {
+        "personnel_Externe" : {
+            "home": {
+                "title": "Personnel_Externes",
+                "createLabel": "Créer un nouveau Personnel_Externe",
+                "createOrEditLabel": "Créer ou éditer un Personnel_Externe"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Personnel_Externe {{ id }} ?"
+            },
+            "detail": {
+                "title": "Personnel_Externe"
+            }
+        }
+    }
+}
+

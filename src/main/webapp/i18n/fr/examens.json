@@ -1,0 +1,22 @@
+{
+    "cmsApp": {
+        "examens" : {
+            "home": {
+                "title": "Examenss",
+                "createLabel": "Créer un nouveau Examens",
+                "createOrEditLabel": "Créer ou éditer un Examens"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Examens {{ id }} ?"
+            },
+            "detail": {
+                "title": "Examens"
+            },
+            "type": "Type",
+            "libelle": "Libelle",
+            "date": "Date",
+            "consultation": "Consultation"
+        }
+    }
+}
+
